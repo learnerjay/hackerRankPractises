@@ -12,16 +12,17 @@ Complete the getSecondLargest function in the editor below. It has one parameter
 **/
 function getSecondLargest(nums) {
     // Complete the function
-    var largest = 0;
-    var secondLargest = 0;
-    for(let i=0;i<=largest;i++){
+    var largest = nums[0];
+    var secondLargest = nums[0];
+    for(let i=1;i<=nums.length;i++){
         if (nums[i]>largest){
-            var largest = nums[i];
+            secondLargest = largest;
+            largest = nums[i];
+            continue;
         } 
         if ((nums[i] > secondLargest) && (nums[i] < largest)) {
             secondLargest = nums[i];
         }
-    }
-    
+    } 
     return secondLargest; 
     }
