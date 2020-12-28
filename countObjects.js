@@ -13,3 +13,6 @@ function getCount(objects) {
   }
   return counter;
 }
+
+//Alternate method using filter 
+return objects.filter(item =>item.x===item.y).length;
