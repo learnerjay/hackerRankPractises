@@ -33,6 +33,10 @@ function getMaxLessThanK(n, k) {
     }
     return max;
 }
+/**
+2nd Solution through Ternary Operation
+ return ((k | (k - 1)) > n) ? (k - 2) : (k - 1);
+**/
 
 function main() {
     const q = +(readLine());
