@@ -40,6 +40,25 @@ function jumpingOnClouds(c) {
         }
         return count;
 }
+/**Second easy readability Answer
+function jumpingOnClouds(c) {
+   var count = 0;
+  for (var i = 0; i < c.length; i++) {
+    if (c[i] === 0) {
+      if (c[i] === c[i + 1]) {
+        count++;
+        console.log(count);
+        i++;
+        console.log(i);
+      }
+    } else {
+      count++;
+      console.log(count);
+    }
+  }
+  return count;
+}
+**/
 
 function main() {
     const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
