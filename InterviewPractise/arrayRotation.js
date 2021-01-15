@@ -36,7 +36,19 @@ function rotLeft(a, d) {
     }
     return b;
 }
-
+/*
+ var arr = [];
+    var l = 0;
+    for(let i=0;i<a.length;i++){
+        if(i >= d){ 
+            arr[i-d] = a[i]
+        }else{
+            arr[a.length-d+l] = a[i];
+            l = i+1;
+        }
+    }
+    return arr
+*/
 function main() {
     const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
     const nd = readLine().split(' ');
