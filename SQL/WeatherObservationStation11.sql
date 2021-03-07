@@ -15,3 +15,6 @@ Solution
 Enter your query here.
 */
 SELECT DISTINCT CITY FROM STATION WHERE CITY NOT RLIKE '^[AEIOU]' OR CITY NOT RLIKE '[AEIOU]$';
+/*
+RLIKE operator performs a pattern match of a string expression against a pattern. The pattern is supplied as an argument. 
+*/
